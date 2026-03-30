@@ -193,6 +193,15 @@
     var errorMsg = document.getElementById('pwError');
     var code = 'Client-IRTC-00';
     var attempts = 0;
+
+    // Auto-unlock if returning from a brief
+    if (window.location.search.indexOf('unlocked=true') > -1) {
+      overlay.style.display = 'none';
+      content.classList.remove('content-locked');
+      content.style.display = 'block';
+      return;
+    }
+
     function tryUnlock() {
       if (input.value === code) {
         overlay.style.opacity = '0';
