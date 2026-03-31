@@ -232,14 +232,25 @@
     .story-hl { font-size:12px; }
     .co-badge { width:28px; height:28px; font-size:7px; }
   }
-  .hub-btn { display:inline-flex; align-items:center; gap:6px; background:rgba(0,168,143,.15); border:1px solid rgba(0,168,143,.35); border-radius:5px; padding:6px 13px; font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; color:var(--irtc-mid); letter-spacing:.8px; text-decoration:none; text-transform:uppercase; cursor:pointer; transition:background .15s,border-color .15s; white-space:nowrap; flex-shrink:0; }
+  
   .hub-btn:hover { background:rgba(0,168,143,.28); border-color:rgba(0,168,143,.6); }
   .hub-btn svg { width:12px; height:12px; fill:var(--irtc-mid); flex-shrink:0; }
+
+  /* ── BACK TO HUB BAR ── */
+  .hub-bar { background:var(--irtc-mid); padding:8px 36px; display:flex; align-items:center; justify-content:space-between; }
+  .hub-bar a { display:inline-flex; align-items:center; gap:6px; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:1px; color:#fff; text-decoration:none; text-transform:uppercase; touch-action:manipulation; }
+  .hub-bar a:hover { text-decoration:underline; }
+  .hub-bar .hub-bar-right { font-family:'Roboto Mono',monospace; font-size:10px; color:rgba(255,255,255,.7); }
 </style>
 </head>
 <body>
 
 <div id="mainContent">
+
+<div class="hub-bar">
+  <a href="index.html">&#8592; Back to Hub</a>
+  <span class="hub-bar-right">ACC.26 &middot; iRhythm Technologies &middot; PulseStrat Leadership</span>
+</div>
 
 <header class="header">
   <div class="header-inner">
@@ -257,7 +268,6 @@
       <div class="conf-name">ACC.26 &middot; March 28&ndash;30, 2026</div>
       <div class="conf-loc">&#128205; New Orleans, Louisiana &middot; #ACC26</div>
     </div>
-    <a href="index.html" class="hub-btn" title="Back to Hub"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="width:12px;height:12px;fill:currentColor;vertical-align:middle;margin-right:5px;"><path d="M8 1L1 7h2v7h4v-4h2L8 1z"/></svg> Back to Hub</a>
   </div>
 </header>
 
